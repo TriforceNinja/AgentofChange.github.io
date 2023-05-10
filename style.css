@@ -1,0 +1,173 @@
+body {
+    font-family: system-ui;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+
+header {
+    background-color: #ab4b4bed;
+    color: #000000;
+    margin-top:1.64%;
+    float: top;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+    position:relative;
+    display:inline-block;
+    vertical-align: top;
+    padding: 50px;
+}
+
+.social-icon {
+    color: #aaaaaa;
+    transition: color 0.2s;
+    width: 100px;
+    height: 100px;
+}
+
+.social-icon:hover {
+    color: #333333;
+}
+
+ion-icon {
+    font-size: 50px;
+}
+
+
+
+#gallery {
+    line-height:0;
+    -webkit-column-count:5; /* split it into 5 columns */
+    -webkit-column-gap:5px; /* give it a 5px gap between columns */
+    -moz-column-count:5;
+    -moz-column-gap:5px;
+    column-count:5;
+    column-gap:5px;
+ }
+
+#gallery img {
+   width: 100% !important;
+   margin-bottom:5px; /* to match column gap */
+
+}
+
+
+@media (max-width: 1000px) {
+    #gallery {
+     -moz-column-count:    3;
+     -webkit-column-count: 3;
+     column-count:         3;
+    }
+ }
+
+/*Navigation*/
+
+/*.TabContainer{
+    color: #171717;
+    height: 20vh;
+    display: block;
+    align-items: center;
+}
+
+.TabContainer .buttonContainer {
+    padding: 15px;
+    border: 2px solid rgb(0, 0, 0);
+    font-family: system-ui;
+    display: flex;
+    gap: 32px
+}
+
+.TabContainer .buttonContainer button{
+    list-style: none;
+
+}
+
+button{
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    transition: 0.4 ease;
+}
+ 
+
+
+.TabContainer .buttonContainer button:hover{
+    color: #ffffff;
+    animation: glowing 1s ease-in-out infinite alternate;
+}
+
+.buttonContainer:hover li a:not(:hover){
+    color: white;
+    opacity: 0.3;
+    filter: blur(1px);
+}
+*/
+
+.TabContainer {
+    background-color: #ab4b4bed;
+    position: fixed;
+    top: 0;
+    width: 100%; 
+    display: block;
+    transition: top 0.3s;
+    display: block;
+    align-items: center;
+}
+
+
+  
+.TabContainer tablink {
+    display:inline;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid rgb(0, 0, 0);
+    font-family: system-ui;
+    gap: 32px
+  }
+  
+  .TabContainer tablink:hover {
+    background-color: #ddd;
+    color: black;
+    animation: glowing 1s ease-in-out infinite alternate;
+  }
+  
+  .TabContainer tablink.active {
+    background-color: #c3a2a2ed;
+    color: white;
+  }
+
+  .tablink:hover li a:not(:hover){
+    color: white;
+    opacity: 0.3;
+    filter: blur(1px);
+}
+
+
+main {
+    padding: 20px;
+}
+
+footer {
+    position: relative;
+    bottom:0%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    width:100%;
+
+}
